@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Елена Антонова](https://up.htmlacademy.ru/htmlcss/28/user/772485).
-* Наставник: Артём Рудов.
+* Студент: [Елена Антонова](https://htmlacademy.ru/profile/id772485).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 

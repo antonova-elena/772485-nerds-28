@@ -22,11 +22,52 @@
       </ul>
       <a href="cart.html">Корзина</a>
     </nav>
+    <div>
+      <input type="radio" id="button-1" name="toggle" checked>
+      <label for="button-1"></label>
+      <input type="radio" id="button-2" name="toggle">
+      <label for="button-2"></label>
+      <input type="radio" id="button-3" name="toggle">
+      <label for="button-3"></label>
+    </div>
+    <ul>
+      <li>
+        <div>
+          <span>Долго, дорого, скрупулезно</span>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div>
+          <img src="img/nerds-index-slide-1.jpg" width="760" height="431" alt=" ">
+        </div>
+      </li>
+      <li>
+        <div>
+          <span>Любим математику как никто другой</span>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div>
+          <img src="img/nerds-index-slide-2.jpg" width="760" height="431" alt=" ">
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>Только ночь,только хардкор</p>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+          <a href="#">Узнать больше</a>
+        </div>
+        <div>
+          <img src="img/nerds-index-slide-3.jpg" width="760" height="431" alt=" ">
+        </div>
+      </li>
+    </ul>
+
   </header>
   <main>
-    <h1>Дизайн-студия «Нёрдс»</h1>
+    <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
     <section>
-      <h2>Услуги</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <ul>
         <li>
           <div>
@@ -55,7 +96,7 @@
       </ul>
     </section>
     <section>
-      <h2>О нас</h2>
+      <h2 class="visually-hidden">О нас</h2>
       <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива.Работаем не покладая
         рук, как роботы.</p>
@@ -67,7 +108,7 @@
       </ul>
     </section>
     <section>
-      <h2>Преимущества</h2>
+      <h2 class="visually-hidden">Преимущества</h2>
       <p>
         <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии «Нёрдс»">
       </p>
@@ -121,7 +162,6 @@
         ул. Б. Конюшенная, д. 19/8</address>
       <p><a href="tel:+78122757575">(812)275-75-75</a></p>
       <a href="blank.html">Напишите нам</a>
-      <!-- Здесь будет форма обратной связи -->
     </div>
     <ul>
       <li>
@@ -134,8 +174,22 @@
         <a href="#">Инстаграм</a>
       </li>
     </ul>
-    <p><span>Давайте дружить, это выгодно!</span>Скидка 10% для друзей из социальных сетей.</p>
+    <p><span>Давайте дружить, это выгодно!</span> Скидка 10% для друзей из социальных сетей.</p>
   </footer>
+  <div>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
+        <label for="email">Ваш email</label>
+        <input type="email" id="email" name="email" placeholder="Для отправки ответа">
+        <label for="review">Текст отзыва</label>
+        <textarea name="review" id="review">В свободной форме</textarea>
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
+  </div>
 </body>
 
 </html>

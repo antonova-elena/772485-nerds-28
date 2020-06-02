@@ -24,58 +24,69 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+    <h1>Магазин готовых шаблонов</h1>
     <section>
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Стоимость:</legend>
-          <input type="range" id="price" name="price" min="0" max="1500" step="1000">
-          <fieldset>
-            <label for="price-from">от</label>
-            <input type="number" value="0" id="price-from">
-            <label for="price-before">до</label>
-            <input type="number" value="15000" id="price-before">
-          </fieldset>
+          <h3>Стоимость:</h3>
+          <div>
+
+            <div class="slider-range">
+              <div class="slider-axios">
+                <div class="slider-selected-area"></div>
+              </div>
+              <button class="button-price-from"></button>
+              <button class="button-price-to"></button>
+            </div>
+
+            <div>
+              <label for="price-min">от</label>
+              <input type="number" value="0" id="price-min" name="price-min">
+              <label for="price-max">до</label>
+              <input type="number" value="15000" id="price-max" name="price-max">
+            </div>
+
+          </div>
         </fieldset>
         <fieldset>
-          <legend>Сетка:</legend>
+          <h3>Сетка:</h3>
           <ul>
             <li>
-              <input type="radio" id="filter-adaptive" name="grid" checked>
+              <input type="radio" id="filter-adaptive" name="grid" value="adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" id="filter-fixed" name="grid">
+              <input type="radio" id="filter-fixed" name="grid" value="fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" id="filter-rubber" name="grid">
+              <input type="radio" id="filter-rubber" name="grid" value="rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Особенности</legend>
+          <h3>Особенности</h3>
           <ul>
             <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <input type="checkbox" name="filter-features" id="filter-slider" value="slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="block-features" id="filter-block-features">
+              <input type="checkbox" name="filter-features" id="filter-block-features" value="features">
               <label for="filter-block-features">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
+              <input type="checkbox" name="filter-features" id="filter-news" value="news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
+              <input type="checkbox" name="filter-features" id="filter-gallery" value="gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="basket" id="filter-basket">
+              <input type="checkbox" name="filter-features" id="filter-basket" value="basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
@@ -85,103 +96,104 @@
     </section>
     <section>
       <h2 class="visually-hidden">Список шаблонов</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legend>Сортировать:</legend>
-          <ul>
-            <li>
-              <input type="radio" id="filter-price" name="sort" checked>
-              <label for="filter-price">по цене</label>
-            </li>
-            <li>
-              <input type="radio" id="filter-type" name="sort">
-              <label for="filter-type">по типу</label>
-            </li>
-            <li>
-              <input type="radio" id="filter-name" name="sort">
-              <label for="filter-name">по названию</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <ul>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/sedona.jpg" width="360" height="580"
-                alt="Sedona. Информационный сайт для туристов">
-            </div>
-            <div>
-              <h3>Sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <a href="cart.html">9 900 ₽</a>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/pink.jpg" width="358" height="576"
-                alt="Pink. Продуктовый лендинг  приложения для iOS и Android">
-            </div>
-            <div>
-              <h3>Pink</h3>
-              <p>Продуктовый лендинг  приложения для iOS и Android</p>
-              <a href="cart.html">9900 ₽</a>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/borodinski.jpg" width="364" height="582" alt="Borodinski. Сайт Барбершопа">
-            </div>
-            <div>
-              <h3>Borodinski</h3>
-              <p>Сайт Барбершопа</p>
-              <a href="cart.html">9900 ₽</a>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/mishka.jpg" width="362" height="580"
-                alt="Mishka. Сайт вязанных изделий ручной работы">
-            </div>
-            <div>
-              <h3>Mishka</h3>
-              <p>Сайт вязанных изделий ручной работы</p>
-              <a href="cart.html">9900 ₽</a>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/education.jpg" width="364" height="582"
-                alt="Education. Сайт образовательного учреждения">
-            </div>
-            <div>
-              <h3>Education</h3>
-              <p>Сайт образовательного учреждения</p>
-              <a href="cart.html">9900 ₽</a>
-            </div>
-          </article>
-        </li>
-        <li>
-          <article>
-            <div>
-              <img src="img/projects/kvast.jpg" width="362" height="580" alt="Кваст. Крафтовый квас">
-            </div>
-            <div>
-              <h3>Кваст</h3>
-              <p>Крафтовый квас</p>
-              <a href="cart.html">9900 ₽</a>
-            </div>
-          </article>
-        </li>
-      </ul>
+      <div>
+        <span>Сортировать:</span>
+        <ul>
+          <li>
+            <a href="#">по цене</a>
+          </li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по названию</a>
+          </li>
+          <li>
+            <a href="#">по убыванию</a>
+          </li>
+          <li>
+            <a href="#">по возрастанию</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/sedona.jpg" width="360" height="580"
+                  alt="Sedona. Информационный сайт для туристов">
+              </div>
+              <div>
+                <h3>Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="cart.html">9 900 ₽</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/pink.jpg" width="358" height="576"
+                  alt="Pink. Продуктовый лендинг  приложения для iOS и Android">
+              </div>
+              <div>
+                <h3>Pink</h3>
+                <p>Продуктовый лендинг  приложения для iOS и Android</p>
+                <a href="cart.html">9900 ₽</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/borodinski.jpg" width="364" height="582" alt="Borodinski. Сайт Барбершопа">
+              </div>
+              <div>
+                <h3>Borodinski</h3>
+                <p>Сайт Барбершопа</p>
+                <a href="cart.html">9900 ₽</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/mishka.jpg" width="362" height="580"
+                  alt="Mishka. Сайт вязанных изделий ручной работы">
+              </div>
+              <div>
+                <h3>Mishka</h3>
+                <p>Сайт вязанных изделий ручной работы</p>
+                <a href="cart.html">9900 ₽</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/education.jpg" width="364" height="582"
+                  alt="Education. Сайт образовательного учреждения">
+              </div>
+              <div>
+                <h3>Education</h3>
+                <p>Сайт образовательного учреждения</p>
+                <a href="cart.html">9900 ₽</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <div>
+                <img src="img/projects/kvast.jpg" width="362" height="580" alt="Кваст. Крафтовый квас">
+              </div>
+              <div>
+                <h3>Кваст</h3>
+                <p>Крафтовый квас</p>
+                <a href="cart.html">9900 ₽</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
       <footer>
         <ul>
           <li>

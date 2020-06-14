@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,32 +9,36 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
       <div class="logo">
-        <a class="logo-img" href="index.html">
+        <a class="logo-link" href="index.html">
           <img src="img/svg-nerds/nerds-logo.svg" width="160" height="66" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
       </div>
-      <ul class="navigation-list">
-        <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Студия</a></li>
-        <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Клиенты</a></li>
-        <li class="navigation-item text-uppercase"><a class="navigation-link">Магазин</a></li>
-        <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Контакты</a></li>
-      </ul>
-      <ul class="navigation-additional-list ">
-        <li class="navigation-item text-uppercase"><a class="cart-link" href="cart.html">Корзина</a>
-        </li>
-      </ul>
+      <div class="navigation-wrapper">
+        <div class="container">
+          <ul class="navigation-list">
+            <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Студия</a></li>
+            <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Клиенты</a></li>
+            <li class="navigation-item text-uppercase"><a class="navigation-link navigation-link-current">Магазин</a></li>
+            <li class="navigation-item text-uppercase"><a class="navigation-link" href="blank.html">Контакты</a></li>
+          </ul>
+          <ul class="navigation-additional-list ">
+            <li class="navigation-item text-uppercase"><a class="cart-link" href="cart.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main>
-    <h1>Магазин готовых шаблонов</h1>
-    <section>
+  <main class="page-catalog container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+    <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="filter-item">
           <h3>Стоимость:</h3>
           <div class="range-filter">
 
@@ -114,10 +118,10 @@
           <li class="sort-item">
             <a class="sort-link" href="#">по названию</a>
           </li>
-          <li class="sort-icon">
+          <li class="sort-item">
             <a class="sort-icon-link" href="#">по убыванию</a>
           </li>
-          <li class="sort-icon">
+          <li class="sort-item">
             <a class="sort-icon-link" href="#">по возрастанию</a>
           </li>
         </ul>
@@ -130,7 +134,7 @@
                 alt="Sedona. Информационный сайт для туристов">
             </div>
             <div class="product-description">
-              <h3>Sedona</h3>
+              <h3 class="product-title">Sedona</h3>
               <p>Информационный сайт для туристов</p>
               <a class="button button-catalog" href="cart.html">9 900 ₽</a>
             </div>
@@ -143,7 +147,7 @@
                 alt="Pink. Продуктовый лендинг  приложения для iOS и Android">
             </div>
             <div class="product-description">
-              <h3>Pink</h3>
+              <h3 class="product-title">Pink</h3>
               <p>Продуктовый лендинг  приложения для iOS и Android</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
@@ -155,7 +159,7 @@
               <img src="img/projects/borodinski.jpg" width="364" height="582" alt="Borodinski. Сайт Барбершопа">
             </div>
             <div class="product-description">
-              <h3>Borodinski</h3>
+              <h3 class="product-title">Borodinski</h3>
               <p>Сайт Барбершопа</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
@@ -168,7 +172,7 @@
                 alt="Mishka. Сайт вязанных изделий ручной работы">
             </div>
             <div class="product-description">
-              <h3>Mishka</h3>
+              <h3 class="product-title">Mishka</h3>
               <p>Сайт вязанных изделий ручной работы</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
@@ -181,7 +185,7 @@
                 alt="Education. Сайт образовательного учреждения">
             </div>
             <div class="product-description">
-              <h3>Education</h3>
+              <h3 class="product-title">Education</h3>
               <p>Сайт образовательного учреждения</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
@@ -193,7 +197,7 @@
               <img src="img/projects/kvast.jpg" width="362" height="580" alt="Кваст. Крафтовый квас">
             </div>
             <div class="product-description">
-              <h3>Кваст</h3>
+              <h3 class="product-title">Кваст</h3>
               <p>Крафтовый квас</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
@@ -203,7 +207,7 @@
       <footer class="pagination">
         <ul class="pagination-list">
           <li class="pagination-item">
-            <a class="button-page fist-page">1</a>
+            <a class="button-page page-current">1</a>
           </li>
           <li class="pagination-item">
             <a class="button-page second-page" href="#">2</a>
@@ -219,31 +223,35 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="map">
-      <a class="map-link" href="blank.html">
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
-      </a>
-    </div>
-    <div class="footer-contacts">
-      <p class="company-title">Nёrds Design Studio</p>
-      <address class="company-address">191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</address>
-      <p class="company-phone"><a href="tel:+78122757575">(812) 275-75-75</a></p>
-      <a class="button button-footer-contacts" href="blank.html">Напишите нам</a>
-    </div>
-    <ul class="social-list">
-      <li class="social-item">
-        <a class="social-button social-button-vk" href="#">В контакте</a>
-      </li>
-      <li class="social-item">
-        <a class="social-button social-button-fb" href="#">Фейсбук</a>
-      </li>
-      <li class="social-item">
-        <a class="social-button social-button-inst" href="#">Инстаграм</a>
-      </li>
-    </ul>
-    <p class="offer"><span class="offer-friendship">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из
-      социальных сетей.</p>
+      <div class="map">
+        <a class="map-link" href="blank.html">
+          <img src="img/map.png" width="1440" height="416" alt="Карта">
+        </a>
+      </div>
+      <div class="container">
+        <div class="footer-contacts">
+          <p class="company-title">Nёrds Design Studio</p>
+          <address class="company-address">191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</address>
+          <p class="company-phone"><a href="tel:+78122757575">(812) 275-75-75</a></p>
+          <a class="button button-footer-contacts" href="blank.html">Напишите нам</a>
+        </div>
+        <div class="social-page">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button social-button-vk" href="#">В контакте</a>
+            </li>
+            <li class="social-item">
+              <a class="social-button social-button-fb" href="#">Фейсбук</a>
+            </li>
+            <li class="social-item">
+              <a class="social-button social-button-inst" href="#">Инстаграм</a>
+            </li>
+          </ul>
+          <p class="offer"><span class="offer-friendship">Давайте дружить, это выгодно!</span> Скидка 10% для друзей из
+            социальных сетей.</p>
+        </div>
+     </div>
   </footer>
 </body>
 

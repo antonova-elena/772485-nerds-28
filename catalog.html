@@ -28,12 +28,11 @@
           <li class="navigation-item text-uppercase"><a class="navigation-link cart-link" href="cart.html">Корзина</a>
           </li>
         </ul>
-        </div>
-        <div class="container">
-          <h1 class="page-title">Магазин готовых шаблонов</h1>
-        </div>
       </div>
     </nav>
+    
+      <h1>Магазин готовых шаблонов</h1>
+    
   </header>
   <main class="page-catalog container">
     <section class="filter">
@@ -52,11 +51,11 @@
             </div>
 
             <div class="price-filter">
-              <label class="price-min">
-                от<input type="number" name="price-min" value="0">
+              <label for="price-filter-min">
+                от<input type="number" name="price-min" id="price-filter-min" value="0" step="100">
               </label>
-              <label for="price-max">
-                до<input type="number" name="price-max" value="15000">
+              <label class="price-filter-max">
+                до<input type="number" name="price-max" id="price-filter-max" value="15000">
               </label>
             </div>
 
@@ -66,15 +65,15 @@
           <h3>Сетка:</h3>
           <ul class="grid-filter-list">
             <li class="grid-filter-item">
-              <input class="visually-hidden filter-input-radio" type="radio" id="filter-adaptive" name="grid" value="adaptive" checked>
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="grid-filter-item">
-              <input class="visually-hidden filter-input-radio" type="radio" id="filter-fixed" name="grid" value="fixed">
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-fixed" value="fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
             <li class="grid-filter-item">
-              <input class="visually-hidden filter-input-radio" type="radio" id="filter-rubber" name="grid" value="rubber">
+              <input class="visually-hidden filter-input-radio" type="radio" name="grid" id="filter-rubber" value="rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
@@ -147,11 +146,11 @@
           <article class="product">
             <div class="product-picture">
               <img src="img/projects/pink.jpg" width="358" height="576"
-                alt="Pink. Продуктовый лендинг  приложения для iOS и Android">
+                alt="Pink. Продуктовый лендинг приложения для iOS и Android">
             </div>
             <div class="product-description">
               <h3 class="product-title">Pink</h3>
-              <p>Продуктовый лендинг  приложения для iOS и Android</p>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a class="button button-catalog" href="cart.html">9900 ₽</a>
             </div>
           </article>

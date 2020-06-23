@@ -131,6 +131,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 49px;
 }
 
 .navigation-list {
@@ -197,7 +198,6 @@ ul {
 .slider-page-list {
   margin: 0;
 }
-
 
 .button {
   background-color: var(--basic-red-extra-light);
@@ -427,6 +427,17 @@ ul {
   background-color: var(--basic-red);
 }
 
+.main-footer::before {
+  background-image: url(/img/map-marker.png);
+  background-repeat: no-repeat;
+  content: "";
+  height: 190px;
+  position: absolute;
+  right: 30%;
+  top: 30;
+  width: 231px;
+  }
+
 .social-page {
   display: flex;
   justify-content: space-between;
@@ -435,6 +446,8 @@ ul {
 .social-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 68px;
+  margin-bottom: 76px;
   padding: 0;
   width: 262px;
 }
@@ -472,16 +485,23 @@ ul {
 }
 
 .offer {
-  color: var(--additional-text);
-  font-size: 16px;
-  line-height: 22px;
-  width: 660px;
+  margin-top: 75px;
+  margin-bottom: 82px;
 }
 
 .offer-friendship {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.offer-discount {
+  color: var(--additional-text);
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  width: 660px;
 }
 
 /* Popup */
@@ -501,6 +521,7 @@ ul {
   align-content: start;
   display: grid;
   grid-template-columns: 260px 1fr;
+  margin-top: 54px;
 }
 
 .filter fieldset {
@@ -526,7 +547,7 @@ h3,
 }
 
 .range-filter {
-  margin-top: 55px;
+  margin-top: 26px;
   margin-bottom: 54px;
   width: 260px;
 }
@@ -655,8 +676,8 @@ h3,
   opacity: 1;
 }
 
-.filter-input-radio:disabled + label,
-.filter-input-radio:checked:disabled + label {
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled + label::after{
   opacity: 0.3;
 }
 
@@ -684,7 +705,6 @@ h3,
 .filter-input-checkbox + label::before {
   background-image: url(/img/svg-nerds/checkbox-off.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
   content: "";
   height: 23px;
   left: -42px;
@@ -697,7 +717,6 @@ h3,
 .filter-input-checkbox:checked + label::after {
   background-image: url(/img/svg-nerds/checkbox-on.svg);
   background-repeat: no-repeat;
-  background-position: 0 0;
   content: "";
   height: 23px;
   left: -42px;
@@ -737,43 +756,72 @@ h3,
 
 /* Sort-filter */
 
+.catalog {
+  margin-left: 140px;
+  }
+
+.catalog-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
 .sort-list {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 54px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 360px;
+  padding-left: 266px;
 }
 
 .sort-item {
   font-size: 14px;
   line-height: 18px;
+  margin-right: 25px;
+  position: relative;
   text-transform: uppercase;
+  display: flex;
 }
 
-.sort-icon {
+.sort-icon-list {
+  flex-direction: flex-end;
+}
+
+.sort-icon-link {
   height: 10px;
+  opacity: 0.3;
   width: 11px;
+}
+
+.icon-link-down {
+  background-image: url(/img/svg-nerds/icon-down-dir.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -4px;
+  left: -75px;
+}
+
+.icon-link-up {
+  background-image: url(/img/svg-nerds/icon-up-dir.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -4px;
+  left: -52px;
 }
 
 .sort-link {
   opacity: 0.3;
 }
 
-.sort-icon-link {
-  opacity: 0.2;
-}
-
-.sort-link:hover,
-.sort-icon-link:hover {
+.sort-icon-link,
+.sort-link:hover {
   opacity: 0.6;
 }
 
 .sort-link:active,
 .sort-icon-link:active {
-  color: var(--basic-black);
-}
-
-.catalog {
-margin-left: 140px;
+  opacity: 1;
 }
 
 .product-title:hover {
@@ -824,14 +872,16 @@ margin-left: 140px;
 .product-description {
   align-items: center;
   background-color: var(--basic-grey-extra-light);
-  top:-40px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   height: 231px;
   justify-content: center;
-  position: absolute;
+  position: relative;
   width: 360px;
 }
+
+
 
 .button-catalog {
   width: 200px;
@@ -851,6 +901,7 @@ margin-left: 140px;
 
 .pagination-list {
   display: flex;
+  padding: 0;
 }
 
 .pagination-item {

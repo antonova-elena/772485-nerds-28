@@ -32,21 +32,21 @@
     </nav>
     <div class="slider container">
       <ul class="slide-description-list">
-        <li class="slide-description-item">
+        <li class="slide-description-item slide-description-item-current">
           <div class="slide-wrapper">
             <p class="slide-title">Долго, дорого, скрупулезно</p>
-            <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
             <a class="button button-slide" href="#">Узнать больше</a>
           </div>
         </li>
-        <li class="slide-description-item visually-hidden">
+        <li class="slide-description-item">
           <div class="slide-wrapper">
             <p class="slide-title">Любим математику как никто другой</p>
             <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
             <a class="button button-slide" href="#">Узнать больше</a>
           </div>
         </li>
-        <li class="slide-description-item visually-hidden">
+        <li class="slide-description-item">
           <div class="slide-wrapper">
             <p class="slide-title">Только ночь,только хардкор</p>
             <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
@@ -54,25 +54,25 @@
           </div>
         </li>
       </ul>
-      <ul class="slider-controls visually-hidden">
-        <li class="slider-control-item">
-          <a class="slide-link" href="#">Слайд 1</a>
+      <ul class="slider-controls">
+        <li class="slider-control-item slider-control-item-current">
+          <a class="slide-link" href="#" aria-label="Слайд 1"></a>
         </li>
         <li class="slider-control-item">
-          <a class="slide-link" href="#">Слайд 2</a>
+          <a class="slide-link" href="#" aria-label="Слайд 2"></a>
         </li>
         <li class="slider-control-item">
-          <a class="slide-link" href="#">Слайд 3</a>
+          <a class="slide-link" href="#" aria-label="Слайд 3"></a>
         </li>
       </ul>
       <ul class="slider-page-list">
-        <li class="slider-page">
+        <li class="slider-page slider-page-current">
           <img src="img/nerds-index-slide-1.png" width="760" height="431" alt="Выверенный дизайн ">
         </li>
-        <li class="slider-page visually-hidden">
+        <li class="slider-page">
           <img src="img/nerds-index-slide-2.png" width="760" height="431" alt="Идеальные пропорции ">
         </li>
-        <li class="slider-page visually-hidden">
+        <li class="slider-page">
           <img src="img/nerds-index-slide-3.png" width="760" height="431" alt="Хардкорный подход к работе">
         </li>
       </ul>
@@ -89,7 +89,7 @@
             <img src="img/service-web.jpg" width="300" height="146" alt="Веб-сайты">
           </div>
           <h3 class="service-title text-uppercase">Веб-сайты</h3>
-          <p class="service-text">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
+          <p class="service-text">Мир никогда не будет прежним,<br> после того как увидит ваш сайт!</p>
           <a class="button button-service-red" href="cart.html">Заказать</a>
         </li>
         <li class="service-item">
@@ -97,7 +97,7 @@
             <img src="img/service-applications.png" width="300" height="146" alt="Приложения">
           </div>
           <h3 class="service-title text-uppercase">Приложения</h3>
-          <p class="service-text">Покорите топ-10 приложений в AppStore и Google Play </p>
+          <p class="service-text">Покорите топ-10 приложений в<br> AppStore и Google Play </p>
           <a class="button button-service-green" href="cart.html">Заказать</a>
         </li>
         <li class="service-item">
@@ -105,7 +105,7 @@
             <img src="img/service-presentations.png" width="300" height="146" alt="Презентации">
           </div>
           <h3 class="service-title text-uppercase">Презентации</h3>
-          <p class="service-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <p class="service-text">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
           <a class="button button-service-yellow" href="cart.html">Заказать</a>
         </li>
       </ul>
@@ -114,7 +114,7 @@
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
         <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
           рук, как роботы.</p>
         <p class="about-us-text text-uppercase">Выполняем заказы на разработку:</p>
         <ul class="about-us-list">
@@ -202,22 +202,24 @@
       </div>
   </footer>
   <div>
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <form  class="popup-form" action="https://echo.htmlacademy.ru/courses" method="post">
       <fieldset class="popup">
         <h2>Напишите нам</h2>
-        <p>
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
-        </p>
-        <p>
-          <label for="email">Ваш email</label>
-          <input type="email" id="email" name="email" placeholder="Для отправки ответа">
-        </p>
-        <p>
-          <label for="review">Текст отзыва</label>
-          <textarea name="review" id="review">В свободной форме</textarea>
-        </p>
-        <button type="submit">Отправить</button>
+        <div class="popup-wraper">
+          <p class="popup-name">
+            <label class="popup-title" for="name">Ваше имя</label><br>
+            <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="popup-email">
+            <label class="popup-title" for="email">Ваш email</label><br>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="popup-review">
+            <label class="popup-title" for="review">Текст отзыва</label><br>
+            <textarea name="review" id="review">В свободной форме</textarea>
+          </p>
+        </div>
+          <button type="submit">Отправить</button>
       </fieldset>
     </form>
   </div>

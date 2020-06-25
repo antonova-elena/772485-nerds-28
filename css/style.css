@@ -25,6 +25,7 @@
   --range-grey: #d7dcdf;
   --logo-grey: #a6a6a6;
   --border-button: #dbdbdb;
+  --border-grey: #C1C1C1;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -224,7 +225,8 @@ ul {
   border-radius: 3px;
   color: var(--white);
   display: inline-block;
-  padding: 17px 15px;
+  padding-top: 17px;
+  padding-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -266,19 +268,38 @@ ul {
 }
 
 .slider-control-item a {
-  background-color: transparent;
-  border: 2px solid #ffffff;
+  background-color: var(--white);
   border-radius: 50%;
   cursor: pointer;
   display: block;
-  height: 17px;
+  height: 18px;
   padding: 0;
-  width: 17px;
+  width: 18px;
 }
 
 .slider-control-item-current a {
-  background-color: #ffffff;
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  height: 18px;
+  padding: 0;
+  position: relative;
+  width: 18px;
 }
+
+.slider-control-item-current a::before {
+  border: 2px solid var(--border-grey);
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 8px;
+  z-index: 2;
+}
+
 
 /* Service */
 
@@ -292,7 +313,6 @@ ul {
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
-
 }
 
 .service-title {
@@ -302,6 +322,8 @@ ul {
 }
 
 .button-service-red {
+  padding-left: 39px;
+  padding-right: 40px;
   width: 160px;
 }
 
@@ -315,6 +337,8 @@ ul {
 
 .button-service-green {
   background-color: var(--basic-green-extra-light);
+  padding-left: 39px;
+  padding-right: 40px;
   width: 160px;
 }
 
@@ -328,6 +352,8 @@ ul {
 
 .button-service-yellow {
   background-color: var(--basic-yellow-extra-light);
+  padding-left: 39px;
+  padding-right: 40px;
   width: 160px;
 }
 
@@ -423,9 +449,9 @@ ul {
 }
 
 .partners-list {
+  align-items: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .partners-link {
@@ -480,8 +506,8 @@ ul {
 
 .button-footer-contacts {
   margin-top: 27px;
-  vertical-align: middle;
-  width: 219px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .button-footer-contacts:hover {
@@ -490,6 +516,7 @@ ul {
 
 .button-footer-contacts:active {
   background-color: var(--basic-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .main-footer::before {
@@ -574,69 +601,120 @@ ul {
 /* Popup */
 
 .popup-form {
-  width: 960px;
-  height: 590px;
-  padding: 63px 100px 84px 100px;
-  position: fixed;
-  top: auto;
-  right: 0;
-  bottom: 180px;
-  left: 0;
-  margin: auto;
   background-color: var(--white);
   background-position: 0 0;
+  bottom: 180px;
   box-sizing: border-box;
-  color: var(--basic-black);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  color: var(--basic-black);
+  height: 590px;
+  left: 0;
+  margin: auto;
+  padding: 63px 100px 84px 100px;
+  right: 0;
+  top: auto;
+  width: 960px;
 }
 
 .popup {
   border: none;
+  padding: 0;
+  position: relative;
 }
 
 .popup-wraper {
- 
- 
-  width: 761px;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
- justify-content: space-between;
+  justify-content: space-between;
+  width: 761px;
 }
 
-.h2 {
+h2 {
   margin: 0;
   margin-bottom: 37px;
 }
 
-/* .popup p {
-  font-size: 16px;
- line-height: 18px;
- } */
  .popup-title {
    font-weight: bold;
  }
 
- input {
+ .popup-name,
+ .popup-email {
+  margin: 0;
+  margin-bottom: 34px;
+ }
+
+ .popup-review {
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+ .popup-name input,
+ .popup-email input,
+ .popup-name input:focus,
+ .popup-email input:focus {
   box-sizing: border-box;
-  width: 360px;
-  padding: 16px 14px 16px 16px;
+  border-color: var(--additional-text);
+  color: var(--additional-text);
   font-size: 16px;
   line-height: 18px;
-  color: red;
+  opacity: 0.5;
+  padding: 14px 16px;
   vertical-align: middle;
+  width: 360px;
+}
+
+.popup-name input:hover,
+.popup-email input:hover{
+ opacity: 1;
+}
+
+.popup-name input:invalid,
+.popup-email input:invalid {
+  border-color: var(--special-red-light);
+  color: var(--special-red-light);
 }
 
 textarea {
   box-sizing: border-box;
-  width: 760px;
-  padding: 16px 414px 84px 16px;
+  border-color: var(--additional-text) ;
+  color: var(--additional-text);
   font-size: 16px;
   line-height: 18px;
-  color: red;
-  vertical-align: middle;
+  opacity: 0,5;
+  padding: 16px 414px 84px 16px;
+  width: 760px;
+}
 
-  
+.button-popup {
+ padding-left: 83px;
+ padding-right: 83px;
+}
+
+.popup-close {
+  background-image: url("/img/svg-nerds/close-cross.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+  height: 21px;
+  opacity: 0.3;
+  position: absolute;
+  right: -5px;
+  top: 14px;
+  width: 21px;
+}
+
+.popup-close:hover {
+  opacity: 1;
+}
+
+.popup-close:active {
+  border: 0;
+  opacity: 0.1;
+}
+
+
 /* Catalog */
 
 .page-catalog {
@@ -867,9 +945,14 @@ h3,
   border: none;
   color: var(--basic-black);
   cursor: pointer;
-  height: 50px;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 88px;
+  padding-right: 89px;
   text-transform: uppercase;
-  width: 260px;
 }
 
 .button-filter:hover {
@@ -1028,7 +1111,6 @@ h3,
   width: 255px;
 }
 
-
 .product-title:hover {
   color: var(--basic-red-extra-light);
 }
@@ -1038,7 +1120,8 @@ h3,
 }
 
 .button-catalog {
-  width: 200px;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .button-catalog:hover {
@@ -1067,20 +1150,29 @@ h3,
 .button-page {
   background-color: var(--basic-grey-extra-light);
   border-radius: 3px;
+  border: var(--basic-grey-extra-light);
+  border-style: solid;
+  box-sizing: border-box;
   color: var(--basic-black);
   display: inline-block;
-  height: 50px;
-  text-transform: uppercase;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
-  width: 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 .page-current {
   background-color: var(--white);
+  box-sizing: border-box;
   border: 3px;
   border-color: var(--border-button);
   border-style: solid;
-  box-sizing: border-box;
 }
 
 .button-page:hover {
@@ -1092,5 +1184,7 @@ h3,
 }
 
 .next-page {
-  width: 260px;
+  text-transform: uppercase;
+  padding-left: 78px;
+  padding-right: 77px;
 }

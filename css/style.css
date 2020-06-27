@@ -606,7 +606,6 @@ ul {
   width: 100%
 }
 .map {
- position: relative;
  min-height: 431px;
  min-width: 1160px;
 }
@@ -759,6 +758,7 @@ ul {
   left: 0;
   margin: auto;
   padding: 63px 100px 84px 100px;
+  position: fixed;
   right: 0;
   top: auto;
   width: 960px;

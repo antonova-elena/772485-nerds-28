@@ -32,13 +32,12 @@
     </nav>
     <div class="slider container">
       <ul class="slide-list">
-        <li class="slide slide-1">
+        <li class="slide slide-1 slide-current">
           <div class="slide-wrapper">
-            <p class="slide-title">Долго, дорого,<br> скрупулезно</p>
+            <p class="slide-title">Долго, дорого,<br> скрупулезнo</p>
             <p class="slide-description">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+            <a class="button button-slide" href="#">Узнать больше</a>
           </div>
-          <a class="button button-slide" href="#">Узнать больше</a>
-
         </li>
         <li class="slide slide-2">
           <div class="slide-wrapper">
@@ -47,7 +46,7 @@
             <a class="button button-slide" href="#">Узнать больше</a>
           </div>
         </li>
-        <li class="slide slide-3 slide-current">
+        <li class="slide slide-3">
           <div class="slide-wrapper">
             <p class="slide-title">Только ночь,<br>только хардкор</p>
             <p class="slide-description">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается</p>
@@ -56,30 +55,16 @@
         </li>
       </ul>
       <ul class="slider-controls">
-        <li class="slider-control-item">
+        <li class="slider-control-item slider-control-item-current">
           <a class="slide-link" href="#" aria-label="Слайд 1"></a>
         </li>
         <li class="slider-control-item">
           <a class="slide-link" href="#" aria-label="Слайд 2"></a>
         </li>
-        <li class="slider-control-item  slider-control-item-current">
+        <li class="slider-control-item">
           <a class="slide-link" href="#" aria-label="Слайд 3"></a>
         </li>
       </ul>
-      <!---
-      <ul class="slider-page-list">
-        <li class="slider-page slider-page-current">
-          <img src="img/nerds-index-slide-1.png" width="760" height="431" alt="Выверенный дизайн ">
-        </li>
-        <li class="slider-page">
-          <img src="img/nerds-index-slide-2.png" width="760" height="431" alt="Идеальные пропорции ">
-        </li>
-        <li class="slider-page">
-          <img src="img/nerds-index-slide-3.png" width="760" height="431" alt="Хардкорный подход к работе">
-        </li>
-      </ul>
-    </div>
-      -->
   </header>
   <main class="container">
     <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
@@ -116,8 +101,7 @@
       <section class="about-us">
         <h2 class="visually-hidden">О нас</h2>
         <p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
-          рук, как роботы.</p>
+        <p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="about-us-text text-uppercase">Выполняем заказы на разработку:</p>
         <ul class="about-us-list">
           <li class="about-us-item">Веб-сайтов любой сложности</li>
@@ -149,24 +133,24 @@
     </div>
     <div class="partners">
       <ul class="partners-list">
-        <li class="partners-item">
+        <li class="partners-item partners-item-1">
           <a class="partners-link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/partners/htmlacademy.png" width="199" height="68" alt="Логотип html academy">
           </a>
         </li>
-        <li class="partners-item">
+        <li class="partners-item partners-item-2">
           <a class="partners-link" href="#">
-            <img src="img/partners/borodinski.png" width="199" height="68" alt="Логотип барбершоп «Бородинский»">
+            <img src="img/partners/borodinski.png" width="209" height="90" alt="Логотип барбершоп «Бородинский»">
           </a>
         </li>
-        <li class="partners-item">
+        <li class="partners-item partners-item-3">
           <a class="partners-link" href="#">
-            <img src="img/partners/pink.png" width="199" height="68" alt="Логотип «Pink»">
+            <img src="img/partners/pink.png" width="185" height="52" alt="Логотип «Pink»">
           </a>
         </li>
-        <li class="partners-item">
+        <li class="partners-item partners-item-4">
           <a class="partners-link" href="#">
-            <img src="img/partners/mishka.png" width="199" height="68" alt="Логотип html «Mishka»">
+            <img src="img/partners/mishka.png" width="173" height="84" alt="Логотип html «Mishka»">
           </a>
         </li>
       </ul>
@@ -174,33 +158,33 @@
   </main>
   <footer class="main-footer">
         <div class="map">
-          <img src="img/map.png" width="100%" height="auto" alt="Офис компании находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          <img src="img/map.png" width="100%" height="431" alt="Офис компании находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
         </div>
-        <div class=" container">
-        <div class="footer-contacts">
-          <p class="company-title text-uppercase">Nёrds Design Studio</p>
-          <address class="company-address">191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</address>
-          <p class="company-phone"><a class="phone" href="tel:+78122757575">(812) 275-75-75</a></p>
-          <a class="button button-footer-contacts" href="blank.html">Напишите нам</a>
-        </div>
-        <div class="social-page">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
-            </li>
-            <li class="social-item">
-              <a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
-            </li>
-            <li class="social-item">
-              <a class="social-button social-button-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
-            </li>
-          </ul>
-          <div class="offer">
-            <p class="offer-friendship">Давайте дружить, это выгодно!</p>
-            <p class="offer-discount">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-wrapper container">
+          <div class="footer-contacts">
+            <p class="company-title text-uppercase">Nёrds Design Studio</p>
+            <address class="company-address">191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</address>
+            <p class="company-phone"><a class="phone" href="tel:+78122757575">(812) 275-75-75</a></p>
+            <a class="button button-footer-contacts" href="blank.html">Напишите нам</a>
           </div>
-        </div>
+          <div class="social-page">
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-button social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+              </li>
+              <li class="social-item">
+                <a class="social-button social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+              </li>
+              <li class="social-item">
+                <a class="social-button social-button-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
+              </li>
+            </ul>
+            <div class="offer">
+              <p class="offer-friendship">Давайте дружить, это выгодно!</p>
+              <p class="offer-discount">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
       </div>
   </footer>
   <div>

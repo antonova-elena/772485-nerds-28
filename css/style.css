@@ -613,12 +613,13 @@ ul {
 .main-footer {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+  
 }
 
 .map {
+  min-width: 1200px;
   min-height: 416px;
-  height: 416px;
+  position: relative;
   width: 100%;
 }
 
@@ -628,13 +629,17 @@ ul {
   content: "";
   height: 190px;
   position: absolute;
-  right: 470px;
-  top: 125px;
+  right: 575px;
+  top: 165px;
   width: 231px;
-  }
+}
 
   .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     position: relative;
+    width: 1200px;
   }
 
 .footer-contacts {
@@ -646,7 +651,7 @@ ul {
   padding-bottom: 47px;
   padding-left: 50px;
   position: absolute;
-  top: -330px;
+  top: -435px;
   width: 319px;
 }
 
@@ -686,21 +691,15 @@ ul {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.social-page {
-  display: flex;
-  justify-content: space-between;
-}
-
 .social-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 68px;
-  margin-bottom: 68px;
-  min-width: 262px;
-  padding: 0;
+  box-sizing: border-box;
+  width: 360px;
+  margin: 0;
+  padding-top: 64px;
 }
-
+  
 .social-button {
   background-color: var(--special-grey);
   background-position: center;
@@ -708,6 +707,7 @@ ul {
   border-radius: 50%;
   display: block;
   height: 78px;
+  margin-right: 9px;
   text-align: center;
   width: 78px;
 }
@@ -715,11 +715,6 @@ ul {
 .social-button-vk {
   background-image: url("/img/svg-nerds/vk-icon.svg");
 }
-
-.social-button svg:active {
-  opacity: 0.3;
-}
-
 
 .social-button-fb {
   background-image: url("/img/svg-nerds/fb-icon.svg")
@@ -739,8 +734,12 @@ ul {
 }
 
 .offer {
-  margin-top: 75px;
-  margin-bottom: 74px;
+  box-sizing: border-box;
+  width: 760px;
+  height: 217px;
+  margin-left: auto;
+  padding-top: 69px;
+  padding-right: 200px;
 }
 
 .offer-friendship {

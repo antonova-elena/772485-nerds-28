@@ -71,7 +71,7 @@ h1 {
   font-size: 55px;
   line-height: 55px;
   margin: 0;
-  padding-top: 87px;
+  padding-top: 72px;
   padding-bottom: 108px;
   text-align: center;
 }
@@ -139,7 +139,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 49px;
+  min-height: 65px;
+  padding-top: 49px;
 }
 
 .navigation-list {
@@ -164,18 +165,23 @@ ul {
 
 .navigation-item {
   color: var(--basic-black);
-  margin-left: 44px;
+  padding-left: 40px;
+}
+
+.navigation-link {
+  padding-bottom: 9px;
 }
 
 .navigation-link-current {
   border-bottom: 2px solid var(--basic-red-extra-light);
+  padding-bottom: 25px;
 }
 
-.navigation-link:hover {
+.navigation-link:hover:not(.navigation-link-current) {
   color: var(--basic-red-extra-light);
 }
 
-.navigation-link:active {
+.navigation-link:active:not(.navigation-link-current) {
   color: var(--basic-black);
   opacity: 0.3;
 }

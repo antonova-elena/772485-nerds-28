@@ -1070,7 +1070,8 @@ fieldset.grid-filter {
  opacity: 0.1;
 }
 
-.grid-filter-item label:disabled {
+.filter-input-radio:disabled + label,
+.filter-input-radio:checked:disabled + label {
   opacity: 0.3;
 }
 
@@ -1134,7 +1135,8 @@ fieldset.features-filter {
   opacity: 0.1;
 }
 
-.features-filter-item label:disabled {
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:checked:disabled + label {
   opacity: 0.3;
 }
 

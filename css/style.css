@@ -819,8 +819,8 @@ h2 {
   margin-bottom: 45px;
 }
 
- .popup-name input,
- .popup-email input {
+.popup-name input,
+.popup-email input {
   box-sizing: border-box;
   border: 2px solid var(--border-popup);
   border-radius: 3px;
@@ -831,6 +831,11 @@ h2 {
   padding: 14px 16px;
   vertical-align: middle;
   width: 360px;
+}
+
+.popup-form .popup-invalid-field {
+  border-color: var(--special-red-light);
+  color: var(--special-red-light);
 }
 
 .popup-name input:required:valid,
@@ -846,12 +851,6 @@ h2 {
   opacity: 0.5;
 }
 
-.popup-name input:required:invalid,
-.popup-email input:required:invalid {
-  border-color: var(--special-red-light);
-  color: var(--special-red-light);
-}
-
 .popup-review textarea {
   box-sizing: border-box;
   border: 2px solid var(--border-popup);
@@ -864,6 +863,7 @@ h2 {
   resize: none;
   width: 760px;
 }
+
 
 .button-popup {
   border: none;

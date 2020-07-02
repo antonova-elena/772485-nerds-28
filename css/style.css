@@ -613,6 +613,7 @@ ul {
 .main-footer {
   display: flex;
   flex-wrap: wrap;
+  min-width: 1200px;
 
 }
 

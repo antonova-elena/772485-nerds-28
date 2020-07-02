@@ -624,13 +624,19 @@ ul {
   width: 100%;
 }
 
-  .footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    position: relative;
-    width: 1200px;
-  }
+.map-picture {
+  max-height: 416px;
+  min-height: 416px;
+  min-width: 100%;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  width: 1200px;
+}
 
 .footer-contacts {
   background-color: var(--white);

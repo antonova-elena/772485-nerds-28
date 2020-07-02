@@ -92,8 +92,6 @@ ul {
   text-transform: uppercase;
 }
 
-/* Grid */
-
 .page {
   height: 100%;
 }
@@ -136,7 +134,6 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: 65px;
-
 }
 
 .navigation-list {
@@ -199,7 +196,7 @@ ul {
   width: 16px;
 }
 
-/* Слайдер */
+/* Slider */
 
 .slider {
   min-width: 1160px;
@@ -421,7 +418,7 @@ ul {
   color: var(--opacity-white);
 }
 
-/* О нас */
+/* Abous us */
 
 .index-columns {
   border-top: 2px solid var(--basic-grey-extra-light);
@@ -511,8 +508,8 @@ ul {
   margin-bottom: 10px;
   padding-right: 21px;
   padding-left: 2px;
-
 }
+
 .advantages-value {
   color: var(--basic-black);
   font-weight: 700;
@@ -614,13 +611,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   min-width: 1200px;
-
 }
 
 .map {
   min-width: 1200px;
   min-height: 416px;
-  position: relative;
   width: 100%;
 }
 
@@ -657,7 +652,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 17px;
 }
 
 .company-address,
@@ -802,7 +797,7 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
- }
+}
 
  .popup-name,
  .popup-email {
@@ -810,7 +805,7 @@ h2 {
   line-height: 18px;
   margin: 0;
   margin-bottom: 32px;
- }
+}
 
  .popup-review {
   font-size: 16px;
@@ -863,7 +858,6 @@ h2 {
   resize: none;
   width: 760px;
 }
-
 
 .button-popup {
   border: none;
@@ -1315,7 +1309,7 @@ fieldset.features-filter {
 
 .product-title {
   margin-bottom: 12px;
-  margin-top: 26px;
+  margin-top: -19px;
 }
 
 .product-description p {
@@ -1348,6 +1342,8 @@ fieldset.features-filter {
 .button-catalog:active {
   background-color: var(--special-red);
 }
+
+/* Pagination */
 
 .pagination {
   margin-bottom: 61px;

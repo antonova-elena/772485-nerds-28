@@ -117,7 +117,7 @@ ul {
   width: 160px;
 }
 
-.logo-link:hover {
+.logo-link:active {
   opacity: 0.3;
 }
 
@@ -713,11 +713,11 @@ ul {
 }
 
 .social-link-fb {
-  background-image: url("/img/svg-nerds/fb-icon.svg")
+  background-image: url("/img/svg-nerds/fb-icon.svg");
 }
 
 .social-link-inst {
-  background-image: url("/img/svg-nerds/insta-icon.svg")
+  background-image: url("/img/svg-nerds/insta-icon.svg");
 }
 
 .social-link:hover {
@@ -795,6 +795,7 @@ ul {
 }
 
  .popup-label {
+  display: block;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;

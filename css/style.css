@@ -186,7 +186,7 @@ ul {
 }
 
 .cart-link::before {
-  background-image: url("/img/svg-nerds/cart-icon.svg");
+  background-image: url("../img/svg-nerds/cart-icon.svg");
   background-repeat: no-repeat;
   content: "";
   display: block;
@@ -240,19 +240,19 @@ ul {
 }
 
 .slide-1 {
-  background-image: url("/img/nerds-index-slide-1.png");
+  background-image: url("../img/nerds-index-slide-1.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .slide-2 {
-  background-image: url("/img/nerds-index-slide-2.png");
+  background-image: url("../img/nerds-index-slide-2.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .slide-3 {
-  background-image: url("/img/nerds-index-slide-3.png");
+  background-image: url("../img/nerds-index-slide-3.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -620,7 +620,8 @@ ul {
   width: 100%;
 }
 
-.map-picture {
+.map iframe {
+  border: none;
   max-height: 416px;
   min-height: 416px;
   min-width: 100%;
@@ -722,7 +723,7 @@ ul {
 }
 
 .social-link-vk::after {
-  background-image: url("/img/svg-nerds/vk-icon.svg");
+  background-image: url("../img/svg-nerds/vk-icon.svg");
   background-repeat: no-repeat;
   content: "";
   height: 15px;
@@ -741,7 +742,7 @@ ul {
 }
 
 .social-link-fb::after {
-  background-image: url("/img/svg-nerds/fb-icon.svg");
+  background-image: url("../img/svg-nerds/fb-icon.svg");
   background-repeat: no-repeat;
   content: "";
   height: 22px;
@@ -760,7 +761,7 @@ ul {
 }
 
 .social-link-inst::after {
-  background-image: url("/img/svg-nerds/insta-icon.svg");
+  background-image: url("../img/svg-nerds/insta-icon.svg");
   background-repeat: no-repeat;
   content: "";
   height: 21px;
@@ -924,7 +925,7 @@ ul {
 }
 
 .popup-close {
-  background-image: url("/img/svg-nerds/close-cross.svg");
+  background-image: url("../img/svg-nerds/close-cross.svg");
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
@@ -1082,7 +1083,7 @@ fieldset.grid-filter {
 }
 
 .filter-input-radio + label::before {
-  background-image: url(/img/svg-nerds/radio-off.svg);
+  background-image: url("../img/svg-nerds/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   content: "";
@@ -1095,7 +1096,7 @@ fieldset.grid-filter {
 }
 
 .filter-input-radio:checked + label::after {
-  background-image: url(/img/svg-nerds/radio-on.svg);
+  background-image: url("../img/svg-nerds/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   content: "";
@@ -1114,7 +1115,7 @@ fieldset.grid-filter {
 
 .filter-input-radio:disabled + label::before,
 .filter-input-radio:checked:disabled + label::after {
- opacity: 0.1;
+  opacity: 0.1;
 }
 
 .filter-input-radio:disabled + label,
@@ -1149,7 +1150,7 @@ fieldset.features-filter {
 }
 
 .filter-input-checkbox + label::before {
-  background-image: url(/img/svg-nerds/checkbox-off.svg);
+  background-image: url("../img/svg-nerds/checkbox-off.svg");
   background-repeat: no-repeat;
   content: "";
   height: 23px;
@@ -1161,7 +1162,7 @@ fieldset.features-filter {
 }
 
 .filter-input-checkbox:checked + label::after {
-  background-image: url(/img/svg-nerds/checkbox-on.svg);
+  background-image: url("../img/svg-nerds/checkbox-on.svg");
   background-repeat: no-repeat;
   content: "";
   height: 23px;
@@ -1267,7 +1268,7 @@ fieldset.features-filter {
 }
 
 .icon-link-down {
-  background-image: url(/img/svg-nerds/icon-down-dir.svg);
+  background-image: url("../img/svg-nerds/icon-down-dir.svg");
   background-repeat: no-repeat;
   position: absolute;
   bottom: -4px;
@@ -1275,7 +1276,7 @@ fieldset.features-filter {
 }
 
 .icon-link-up {
-  background-image: url(/img/svg-nerds/icon-up-dir.svg);
+  background-image: url("../img/svg-nerds/icon-up-dir.svg");
   background-repeat: no-repeat;
   position: absolute;
   bottom: -4px;
@@ -1321,7 +1322,7 @@ fieldset.features-filter {
 }
 
 .catalog-item::before {
-  background-image: url(/img/svg-nerds/browser.svg);
+  background-image: url("../img/svg-nerds/browser.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   content: "";

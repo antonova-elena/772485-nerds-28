@@ -55,6 +55,7 @@ body {
   line-height: 24px;
   margin: 0;
   min-width: 1200px;
+  overflow-x: hidden;
   padding: 0;
 }
 
@@ -788,12 +789,12 @@ ul {
   width: 761px;
 }
 
-h2 {
+.popup-title {
   margin: 0;
   margin-bottom: 37px;
 }
 
- .popup-title {
+ .popup-label {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -841,7 +842,7 @@ h2 {
 }
 
 .popup-name input:hover,
-.popup-email input:hover{
+.popup-email input:hover {
   border-color: var(--border-grey-hover);
   opacity: 0.5;
 }
@@ -1320,6 +1321,7 @@ fieldset.features-filter {
   margin-bottom: 32px;
   text-align: center;
   width: 255px;
+  white-space: pre-wrap;
 }
 
 .product-title:hover {

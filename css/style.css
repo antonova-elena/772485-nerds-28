@@ -27,6 +27,7 @@
   --border-button: #dbdbdb;
   --border-grey: #C1C1C1;
   --border-grey-hover: #B4B9BB;
+  --border-grey-active: #C0C0C0;
   --border-popup: #D7DCDE;
   --opacity-white: rgba( 255, 255, 255, 0.3);
   --opacity-black: rgba( 0, 0, 0, 0.3);
@@ -384,7 +385,7 @@ ul {
 }
 
 .button-service-red:active {
-  background-color: var(--basic-red-);
+  background-color: var(--basic-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: var(--opacity-white);
 }
@@ -1443,6 +1444,9 @@ fieldset.features-filter {
 
 .page-link:active {
   background-color: var(--basic-grey);
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: var(--border-grey-active);
   color: var(--opacity-black);
 }
 

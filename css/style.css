@@ -805,13 +805,13 @@ ul {
 /* Popup */
 
 .popup-form {
-  display: none;
   background-color: var(--white);
   background-position: 0 0;
   bottom: 180px;
   box-sizing: border-box;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   color: var(--basic-black);
+  display: none;
   height: 590px;
   left: 0;
   margin: auto;
@@ -824,8 +824,8 @@ ul {
 }
 
 .popup-form-show {
-  display: block;
   animation: bounce 0.6s;
+  display: block;
 }
 
 .popup-form-error {

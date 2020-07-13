@@ -5,11 +5,11 @@
 
   const toggleVisuallyHidden = (evt) => {
     evt.preventDefault();
-    popupFormElement.classList.toggle(`visually-hidden`);
+    popupFormElement.classList.toggle(`popup-form-show`);
   };
 
   const onDocumentKeyDown = (evt) => {
-    if (evt.key === ESCAPE && !popupFormElement.classList.contains(`visually-hidden`)) {
+    if (evt.key === ESCAPE && popupFormElement.classList.contains(`popup-form-show`)) {
       toggleVisuallyHidden(evt);
     }
   }
